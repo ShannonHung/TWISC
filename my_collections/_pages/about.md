@@ -3,6 +3,7 @@ permalink: /about/
 layout: single
 title:  "About Me"
 toc: true
+toc_sticky: true
 ---
 # 中心簡介
 依據行政院『我國資通安全政策白皮書』及行政院國科會『知識經濟時代人才培育之基礎平台與架構計畫』設置之國家級「資通安全研究與教學中心(Taiwan Information Security Center, 簡稱TWISC)。TWISC為跨校研發團隊計畫，本校TWISC＠NTUST扮演TWISC之行政及資源整合角色。TWISC@NTUST於本校第428次行政會議通過設立(民國94年8月12日)。TWISC＠NTUST參與研究團隊：中央研究院、台灣科技大學、台灣大學、長庚大學、東吳大學等20餘位跨校教授與研究群，由中央研究院李德財院士領導。
