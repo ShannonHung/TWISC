@@ -7,6 +7,7 @@ layout: single
 classes: wide # To expand the main content to the right, filling the space of what is normally occupied by the table of contents.
 toc: true # Auto-generated table of contents list for your posts and pages
 toc_label: "Table of Contents"
+toc_sticky: true
 toc_icon: "ellipsis-h" # fontawesome
 excerpt: "As permissioned blockchain becomes a common foundation of blockchainbased applications for current organizations, related stakeholders of the applications need  the means to assess the security risks of the applications." # 摘要 
 header:
