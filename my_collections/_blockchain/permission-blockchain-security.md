@@ -16,8 +16,8 @@ header:
 #   overlay_filter: rgba(255,255,255,0.1)
   overlay_color: "#333" # 在純黑背景
   actions:
-    - label: "Download PDF"
-      url: "/assets/files/SmartIoT2021final.pdf" # 可以讓別人下載檔案
+    - label: "Download Document"
+      url: "/assets/files/barebear.jpg" # 可以讓別人下載檔案
 sidebar:
   nav: "docs"
 ---
