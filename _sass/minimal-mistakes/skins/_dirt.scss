@@ -2,19 +2,29 @@
    Dirt skin
    ========================================================================== */
 
+
 /* Colors */
+
 $background-color: #f3f3f3 !default;
+$header-footer-background-color: #303030 !default;
+$background-image: url(../../../assets/images/header/background.png);
 $text-color: #343434 !default;
+$header-text-color: #eaeaea !default;
 $muted-text-color: #8e8b82 !default;
 $primary-color: #343434 !default;
 $border-color: #e9dcbe !default;
 $footer-background-color: #e9dcbe !default;
 $link-color: #343434 !default;
-$masthead-link-color: $text-color !default;
-$masthead-link-color-hover: $text-color !default;
-$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$form-background-color: mix(#000, $background-color, 15%) !default;
+// $masthead-link-color: $text-color !default;
+// $masthead-link-color-hover: $text-color !default;
+// $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$masthead-link-color: $header-text-color !default;
+$masthead-link-color-hover: mix(#000, $header-text-color, 30%) !default;
+$navicon-link-color-hover: $header-text-color !default;
 
 /* dirt syntax highlighting (base16) */
+
 $base00: #231e18 !default;
 $base01: #302b25 !default;
 $base02: #48413a !default;
@@ -31,3 +41,33 @@ $base0c: #6eb958 !default;
 $base0d: #88a4d3 !default;
 $base0e: #bb90e2 !default;
 $base0f: #b49368 !default;
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+    color: inherit;
+}
+
+.page__content {
+    a,
+    a:visited {
+        color: inherit;
+    }
+}
+
+
+/* next/previous buttons */
+
+.pagination--pager {
+    color: white;
+    background-color: $primary-color;
+    background-image: $background-image;
+    border-color: transparent;
+    &:visited {
+        color: white;
+    }
+}
+
+.ais-search-box .ais-search-box--input {
+    background-color: $form-background-color;
+}

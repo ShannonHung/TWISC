@@ -1,8 +1,17 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+
+  {% comment %} 如果有設定放profile 就顯示profile {% endcomment %}
+  {% if page.author_profile or layout.author_profile %}
+    {% include author-profile.html %}
+  {% endif %}
+  
+  {% comment %} 目錄欄位 {% endcomment %}
   {% if page.sidebar %}
+
+
     {% for s in page.sidebar %}
+      {% comment %} 可能是簡介 的大圖片  簡介的文字標題敘述{% endcomment %}
       {% if s.image %}
         <img src="{{ s.image | relative_url }}"
              alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
@@ -11,9 +20,14 @@
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
     {% endfor %}
+
+
+    {% comment %} 目錄集 類似區塊練 頁面{% endcomment %}
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
+
   {% endif %}
   </div>
+
 {% endif %}
