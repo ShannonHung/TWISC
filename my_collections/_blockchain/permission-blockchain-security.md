@@ -4,7 +4,6 @@ authors: Shi-Cho Cha
 date: 2021-06-06 # update-time
 company: NTUST-PRLAB
 layout: single
-classes: wide # To expand the main content to the right, filling the space of what is normally occupied by the table of contents.
 toc: true # Auto-generated table of contents list for your posts and pages
 toc_label: "Table of Contents"
 toc_sticky: true

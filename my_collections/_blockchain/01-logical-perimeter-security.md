@@ -1,15 +1,8 @@
 ---
-title: "存取控制1: 定防火牆限制未經授權存取"
-authors: Shi-Cho Cha
-date: 2021-06-06 # update-time
-company: NTUST-PRLAB
 layout: single
-classes: wide # To expand the main content to the right, filling the space of what is normally occupied by the table of contents.
-toc: true # Auto-generated table of contents list for your posts and pages
-toc_label: "Table of Contents"
-toc_sticky: true
-toc_icon: "ellipsis-h" # fontawesome
+title:   "存取控制1: 定防火牆限制未經授權存取"
 excerpt: "需求目標：確認私有區塊鏈應用提供者是否已經建立好安全邊界，以限制未經授權的實體或邏輯存取，並進一步透過安全邊界的設定而釐清檢查範圍。" 
+date: 2021-06-06 # update-time
 header:
   overlay_image: /assets/images/header/background.png # 圖片
 #   caption: "Photo credit: [**Unsplash**](https://www.pexels.com/zh-tw/search/earth/)" # 可以表示圖片來源
@@ -18,6 +11,12 @@ header:
   actions:
     - label: "Download PDF"
       url: "/assets/files/SmartIoT2021final.pdf" # 可以讓別人下載檔案
+
+toc: true
+toc_sticky: true
+toc_icon: "ellipsis-h" # fontawesome
+toc_label: "Table of Contents"
+
 sidebar:
   nav: "blockchain"
 ---
