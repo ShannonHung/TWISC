@@ -160,7 +160,6 @@
     -ms-flex-align: center;
     align-items: center;
     min-height: $nav-height;
-    background: $background-color;
     a {
         display: block;
         margin: 0 1rem;
@@ -215,8 +214,8 @@
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                height: 4px;
-                background: $primary-color;
+                height: 3px;
+                background: $masthead-link-color-hover; //navigation底線顏色
                 width: 100%;
                 -webkit-transition: $global-transition;
                 transition: $global-transition;
@@ -392,12 +391,20 @@
     font-size: 1.25rem;
     a {
         color: inherit;
+        &:hover {
+            padding: 4px 5px; //上下 左右
+            background: $navicon-link-color-hover;
+        }
     }
     .active {
-        margin-left: -0.5em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        font-weight: bold;
+        // margin-left: -0.5em;
+        // padding-left: 0.5em;
+        // padding-right: 0.5em;
+        // font-weight: bold;
+        &:hover {
+            padding: 3px 3px;
+            background: $navicon-link-color-hover;
+        }
     }
     @include breakpoint(max-width $large - 1px) {
         position: relative;
