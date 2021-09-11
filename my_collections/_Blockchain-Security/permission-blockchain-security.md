@@ -1,7 +1,7 @@
 ---
-title: 私有區塊鏈應用安全需求
+title: 一、私有區塊鏈應用安全需求
 authors: Shi-Cho Cha
-date: 2021-06-06 # update-time
+date: 2021-09-10 10:35 +0800 # update-time
 company: NTUST-PRLAB
 layout: single
 toc: true # Auto-generated table of contents list for your posts and pages

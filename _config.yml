@@ -269,7 +269,7 @@ compress_html:
 
 # Collections用來歸類
 collections:
-  blockchain:
+  Blockchain-Security:
     output: true
     permalink: /:collection/:path/
 

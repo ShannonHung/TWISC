@@ -1,8 +1,8 @@
 ---
 layout: single
-title: 私有區塊鏈應用安全簡介
+title: 二、私有區塊鏈應用安全簡介
 excerpt: "簡單介紹本文件的主旨以及含意，會針對私有區塊鏈多做描述，同時訂定評估範圍邊界，以及本文的主要六大檢查框架。" # 摘要 
-date: 2021-06-06 # update-time
+date: 2021-09-10 11:35 +0800 # update-time
 header:
   overlay_image: /assets/images/header/background.png # 圖片
 #   caption: "Photo credit: [**Unsplash**](https://www.pexels.com/zh-tw/search/earth/)" # 可以表示圖片來源

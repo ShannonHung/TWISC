@@ -167,6 +167,9 @@ birds:
 #### Multiline text in YAML/front matter
 You might run into is writing text that spans multiple line. 
 - use {{multiline_text | markdownify}}, otherwise, text will automatically be folded and you won’t see multiline output.
+
+(try this)[https://github.com/mmistakes/minimal-mistakes/issues/1746]
+
 ## Layout 
 A pages such as head, footer and navigation.  If your site contains more than a few pages, that’s a lot of content to copy and paste - and any changes need to be made across all pages. So Jekyll gives us an easy solution to this problem-layouts.  Read more on layouts on [Jekyll’s official site](https://jekyllrb.com/docs/layouts/).
 
@@ -378,7 +381,41 @@ Jekyll lets you set the permalink structure globally in your `_config.yml`.You c
 ```
 permalink: /:categories/:year/:month/:day/:title:output_ext
 ```
+## Custom Sorting of Documents 
+[source](https://jekyllrb.com/docs/collections/)
+By default, two documents in a collection are sorted by their date attribute when those posts have the `date` key in their front matter. 
+However, without the date key in their front matter, they are sorted by their respective paths. We can control this sorting via the collection's metadata. 
 
+### Sorted by Front Matter Key
+Documents can be sorted based on a front matter key by setting a `sort_by` in config.yml.
+
+> example
+```yaml
+collections:
+  tutorials:
+    sort_by: lesson
+```
+
+### Manually Ordering Documents
+We can also manually order the documents by setting an order metadata with the filenames listed in the desired order. If a document is nested under subdirectories, include them in entries as well.
+```yaml
+collections:
+  tutorials:
+    order:
+      - hello-world.md
+      - introduction.md
+      - basic-concepts.md
+      - advanced-concepts.md
+
+// under subdirectories
+collections:
+  tutorials:
+    order:
+      - hello-world.md
+      - introduction.md
+      - concepts/basics.md
+      - concepts/advanced.md
+```
 ## Bootstrap
 [GitHub source](https://github.com/twbs/bootstrap-sass)
 1. install `bower install bootstrap-sass` command. This installs Bootstrap and Jquery in the bower_components folder.
@@ -405,3 +442,30 @@ If you want to use javascript, in your` _includes/footer.html` add :
 <script src="{{ site.baseurl }}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 ```
 
+## Add mathjax support to jekyll
+(clieck here to see more)[http://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html]
+
+1. In the _config.yml, add the following lines:
+```yaml
+  # Build settings
+  markdown: kramdown
+```
+2. On the top of the posts that you’d like to add mathjax support (it’s called the YAML ‘‘front matter’’) , add the following line:
+```yaml
+  usemathjax: true
+```
+
+3. Add these lines to _includes/head.html:
+```html
+<!-- for mathjax support -->
+    {% if page.usemathjax %}
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+      <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
+```
+
+4. After that, simply wrap the math symbols with two double-dollar sign $$: ex. `$$E=mc^2$$`
