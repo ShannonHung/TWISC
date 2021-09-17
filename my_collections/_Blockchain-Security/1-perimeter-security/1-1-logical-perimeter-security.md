@@ -19,6 +19,9 @@ toc_label: "Table of Contents"
 
 sidebar:
   nav: "blockchain"
+
+lang: zh
+lang-ref: blockchain-1-1
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/checkbox.js"></script>
 主要可以透過以下的方式，去控管網路存取：

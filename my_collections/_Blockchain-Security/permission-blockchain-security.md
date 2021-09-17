@@ -19,6 +19,9 @@ header:
       url: "/assets/files/barebear.jpg" # 可以讓別人下載檔案
 sidebar:
   nav: "blockchain"
+
+lang: zh
+lang-ref: blockchain-01
 ---
 
 # 需求

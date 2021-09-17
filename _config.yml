@@ -302,7 +302,7 @@ defaults:
 # _blockchain
   - scope:
       path: ""
-      type: blockchain
+      type: Blockchain-Security
     values:
       layout: splash
       author_profile: false

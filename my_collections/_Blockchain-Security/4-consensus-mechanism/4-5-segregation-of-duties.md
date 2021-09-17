@@ -23,6 +23,9 @@ toc_label: "Table of Contents"
 usemathjax: true
 sidebar:
   nav: "blockchain"
+
+lang: zh
+lang-ref: blockchain-4-5
 ---
 
 

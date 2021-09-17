@@ -20,6 +20,9 @@ toc_label: "Table of Contents"
 
 sidebar:
   nav: "blockchain"
+
+lang: zh
+lang-ref: blockchain-4
 ---
 
 首先需要確認所採用區塊鏈技術在演算法上的正確性以及容錯能力，之後則是要呈現所提供私有區塊鏈應用在營運上對於錯誤處理的做法，以及服務的組成，以便能夠瞭解到所佈署區塊鏈應用的風險。

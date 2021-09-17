@@ -1,4 +1,5 @@
 ---
+home: show
 layout: posts
 title:  "For writting essay"
 ---

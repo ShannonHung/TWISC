@@ -19,6 +19,9 @@ toc_label: "Table of Contents"
 
 sidebar:
   nav: "blockchain"
+
+lang: zh
+lang-ref: blockchain-2-2
 ---
 
 # 控制措施

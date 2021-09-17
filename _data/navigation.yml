@@ -8,8 +8,8 @@ main:
     url: /essay/
   - title: "BlockChain Security"
     url: /Blockchain-Security/
-  - title: "Topics"
-    url: /collection-archive/
+  # - title: "Topics"
+  #   url: /collection-archive/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -114,9 +114,9 @@ blockchain:
           url: /Blockchain-Security/6-organizational-security/6-8-incident-and-business-continuity-management/
         - title: "6.9 法律符合性"
           url: /Blockchain-Security/6-organizational-security/6-9-legal-compliance/
-        - title: "9.10 內部稽核與自我審查"
+        - title: "6.10 內部稽核與自我審查"
           url: /Blockchain-Security/6-organizational-security/6-10-internal-auditing-and-selfcheck/
-        - title: "9.11 滲透測試與弱點掃描"
+        - title: "6.11 滲透測試與弱點掃描"
           url: /Blockchain-Security/6-organizational-security/6-11-penetration-testing-and-vulnerability-scanning
-        - title: "9.12 意外事件改善與學習"
+        - title: "6.12 意外事件改善與學習"
           url: /Blockchain-Security/6-organizational-security/6-12-continuous-improvement

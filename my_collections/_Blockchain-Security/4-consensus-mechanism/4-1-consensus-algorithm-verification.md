@@ -22,6 +22,9 @@ toc_label: "Table of Contents"
 
 sidebar:
   nav: "blockchain"
+
+lang: zh
+lang-ref: blockchain-4-1
 ---
 
 

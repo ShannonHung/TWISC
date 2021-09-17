@@ -1,5 +1,6 @@
 <div class="page__footer-follow">
     <ul class="social-icons">
+      
         <!-- {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
@@ -19,3 +20,12 @@
 </div>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://www.twisc.ntust.edu.tw/home.php" rel="nofollow">NTUST</a>.</div>
+
+{%if page.lang != null%}
+    {%for collection in site.collections%}
+    {%assign posts = collection.docs | where:"lang-ref", page.lang-ref | sort: 'lang'%}
+    {%for post in posts%}
+        <li><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}" title="View in {{post.lang}}">{{ post.lang }}</a></li>
+    {%endfor%}
+    {%endfor%}
+{%endif%}
