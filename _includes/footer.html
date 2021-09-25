@@ -1,12 +1,12 @@
 <div class="page__footer-follow">
     <ul class="social-icons">
-      {% for lang in site.languages %}
+      {% comment %} {% for lang in site.languages %}
         {% if lang == site.default_lang %}
           <a href=" {{ page.url }}">{{ lang }}</a>
         {% else %}
           <a href="/{{ lang }}{{ page.url }}">{{ lang }}</a>
         {% endif %}
-      {% endfor %}
+      {% endfor %} {% endcomment %}
         <!-- {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}

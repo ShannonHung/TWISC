@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "首頁"
-    url: /
+    url: /zh/ 
   - title: "關於"
-    url: /about/
+    url: /zh/about/
   - title: "論文"
-    url: /essay/
-  - title: "區塊練安全"
-    url: /Blockchain-Security/
+    url: /zh/essay/
+  - title: "區塊鍊安全"
+    url: /zh/Blockchain-Security/
   # - title: "Topics"
   #   url: /collection-archive/
   # - title: "Sample Posts"
@@ -23,100 +23,100 @@ blockchain:
   - title: "00 開始"
     children:
       - title: "0-1 前言"
-        url: /Blockchain-Security/en/permission-blockchain-security/
+        url: /Blockchain-Security/zh/permission-blockchain-security/
       - title: "0-2 簡介"
-        url: /Blockchain-Security/en/00-introduction/
+        url: /Blockchain-Security/zh/00-introduction/
 
   - title: "01 邊界安全"
     children: 
       - title: "1-1 設定防火牆"
-        url: /Blockchain-Security/en/1-perimeter-security/1-1-logical-perimeter-security/
+        url: /Blockchain-Security/zh/1-perimeter-security/1-1-logical-perimeter-security/
       - title: "1-2 設定實體安全防護"
-        url: /Blockchain-Security/en/1-perimeter-security/1-2-physical-perimieter-security/
+        url: /Blockchain-Security/zh/1-perimeter-security/1-2-physical-perimieter-security/
 
   - title: "02 主機安全與監控"
     children: 
       - title: "2 主機安全與監控"
-        url: /Blockchain-Security/en/2-host-security/2-host-security/
+        url: /Blockchain-Security/zh/2-host-security/2-host-security/
       - title: "2-1 主機與設備安全"
-        url: /Blockchain-Security/en/2-host-security/2-1-protect-hosts-and-device-security/
+        url: /Blockchain-Security/zh/2-host-security/2-1-protect-hosts-and-device-security/
       - title: "2-2 區塊資料保護"
-        url: /Blockchain-Security/en/2-host-security/2-2-protect-block-data-and-node-credentials/
+        url: /Blockchain-Security/zh/2-host-security/2-2-protect-block-data-and-node-credentials/
       - title: "2-3 金鑰與錢包資料保護"
-        url: /Blockchain-Security/en/2-host-security/2-3-protect-user-credentials/
+        url: /Blockchain-Security/zh/2-host-security/2-3-protect-user-credentials/
       - title: "2-4 實體安全防禦機制"
-        url: /Blockchain-Security/en/2-host-security/2-4-guard-the-physical-and-environmental-security/
+        url: /Blockchain-Security/zh/2-host-security/2-4-guard-the-physical-and-environmental-security/
 
   - title: "03 私有鏈節點管理與網路安全"
     children: 
       - title: "3-1 限制參與節點與權限管理"
-        url: /Blockchain-Security/en/3-node-management/3-1-participatatn-management/
+        url: /Blockchain-Security/zh/3-node-management/3-1-participatatn-management/
       - title: "3-2 監控異常行為"
-        url:  /Blockchain-Security/en/3-node-management/3-2-monitoring-abnormal-behavior/
+        url:  /Blockchain-Security/zh/3-node-management/3-2-monitoring-abnormal-behavior/
 
   - title: "04 共識機制安全"
     children: 
       - title: "4 共識機制安全"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-consensus-mechanism/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-consensus-mechanism/
       - title: "4-1 共識機制之證明"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-1-consensus-algorithm-verification/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-1-consensus-algorithm-verification/
       - title: "4-2 評估區塊鏈之容錯能力"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-2-determine-the-byzantine-fault-tolerant-capability/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-2-determine-the-byzantine-fault-tolerant-capability/
       - title: "4-3 評估私有區塊鏈最低啟動能力"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-3-identify-the-minimum-resource-requirement/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-3-identify-the-minimum-resource-requirement/
       - title: "4-4 錯誤處理能力"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-4-deal-with-incidents-about-the-consensus-mechanism/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-4-deal-with-incidents-about-the-consensus-mechanism/
       - title: "4-5 節點營運者的分工要求"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-5-segregation-of-duties/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-5-segregation-of-duties/
       - title: "4-6 揭露機密性保護機制"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-6-desclose-confidentiality-and-privacy-proctection-mechanism/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-6-desclose-confidentiality-and-privacy-proctection-mechanism/
       - title: "4-7 揭露隱私保護機制"
-        url: /Blockchain-Security/en/4-consensus-mechanism/4-7-component-security-management/
+        url: /Blockchain-Security/zh/4-consensus-mechanism/4-7-component-security-management/
 
   - title: "05 應用系統安全"
     children: 
       - title: "5 應用系統安全"
-        url: /Blockchain-Security/en/5-application-security/5-application-security/
+        url: /Blockchain-Security/zh/5-application-security/5-application-security/
       - title: "5-1 威脅模型"
-        url: /Blockchain-Security/en/5-application-security/5-1-threat-modeling/
+        url: /Blockchain-Security/zh/5-application-security/5-1-threat-modeling/
       - title: "5-2 定義安全需求"
-        url: /Blockchain-Security/en/5-application-security/5-2-identify-security-requirements/
+        url: /Blockchain-Security/zh/5-application-security/5-2-identify-security-requirements/
       - title: "5-3 使用者端應用程式之告知功能"
-        url: /Blockchain-Security/en/5-application-security/5-3-user-notification/
+        url: /Blockchain-Security/zh/5-application-security/5-3-user-notification/
       - title: "5-4 程式碼安全分析"
-        url: /Blockchain-Security/en/5-application-security/5-4-code-review/
+        url: /Blockchain-Security/zh/5-application-security/5-4-code-review/
       - title: "5-5 系統安全測試"
-        url: /Blockchain-Security/en/5-application-security/5-5-perform-security-test/
+        url: /Blockchain-Security/zh/5-application-security/5-5-perform-security-test/
       - title: "5-6 區隔開發、測試，與營運環境"
-        url: /Blockchain-Security/en/5-application-security/5-6-ensure-development-environment-security
+        url: /Blockchain-Security/zh/5-application-security/5-6-ensure-development-environment-security
       - title: "5-7 元件安全管理"
-        url: /Blockchain-Security/en/5-application-security/5-7-security-update-management/
+        url: /Blockchain-Security/zh/5-application-security/5-7-security-update-management/
       
   - title: "06 制度面安全控制"
     children: 
         - title: "6 制度面安全控制"
-          url: /Blockchain-Security/en/6-organizational-security/6-organizational-security/
+          url: /Blockchain-Security/zh/6-organizational-security/6-organizational-security/
         - title: "6.1 資訊安全政策"
-          url: /Blockchain-Security/en/6-organizational-security/6-1-establish-and-maintain-documented-procedures/
+          url: /Blockchain-Security/zh/6-organizational-security/6-1-establish-and-maintain-documented-procedures/
         - title: "6.2 人員安全責任與落實"
-          url: /Blockchain-Security/en/6-organizational-security/6-2-security-roles-and-responsibilities/
+          url: /Blockchain-Security/zh/6-organizational-security/6-2-security-roles-and-responsibilities/
         - title: "6.3 教育訓練與宣導"
-          url: /Blockchain-Security/en/6-organizational-security/6-3-information-security-awareness/
+          url: /Blockchain-Security/zh/6-organizational-security/6-3-information-security-awareness/
         - title: "6.4 風險管理程序"
-          url: /Blockchain-Security/en/6-organizational-security/6-4-joint-decision-making/
+          url: /Blockchain-Security/zh/6-organizational-security/6-4-joint-decision-making/
         - title: "6.5 聯合決策組織"
-          url: /Blockchain-Security/en/6-organizational-security/6-5-joint-decision-making/
+          url: /Blockchain-Security/zh/6-organizational-security/6-5-joint-decision-making/
         - title: "6.6 資訊安全負責人"
-          url: /Blockchain-Security/en/6-organizational-security/6-6-designate-a-information-security-officer/
+          url: /Blockchain-Security/zh/6-organizational-security/6-6-designate-a-information-security-officer/
         - title: "6.7 建立變更管理與發佈管理程序"
-          url: /Blockchain-Security/en/6-organizational-security/6-7-change-and-release-management/
+          url: /Blockchain-Security/zh/6-organizational-security/6-7-change-and-release-management/
         - title: "6.8 意外事件管理與業務永續"
-          url: /Blockchain-Security/en/6-organizational-security/6-8-incident-and-business-continuity-management/
+          url: /Blockchain-Security/zh/6-organizational-security/6-8-incident-and-business-continuity-management/
         - title: "6.9 法律符合性"
-          url: /Blockchain-Security/en/6-organizational-security/6-9-legal-compliance/
+          url: /Blockchain-Security/zh/6-organizational-security/6-9-legal-compliance/
         - title: "6.10 內部稽核與自我審查"
-          url: /Blockchain-Security/en/6-organizational-security/6-10-internal-auditing-and-selfcheck/
+          url: /Blockchain-Security/zh/6-organizational-security/6-10-internal-auditing-and-selfcheck/
         - title: "6.11 滲透測試與弱點掃描"
-          url: /Blockchain-Security/en/6-organizational-security/6-11-penetration-testing-and-vulnerability-scanning
+          url: /Blockchain-Security/zh/6-organizational-security/6-11-penetration-testing-and-vulnerability-scanning
         - title: "6.12 意外事件改善與學習"
-          url: /Blockchain-Security/en/6-organizational-security/6-12-continuous-improvement
+          url: /Blockchain-Security/zh/6-organizational-security/6-12-continuous-improvement

@@ -1,11 +1,18 @@
-{% assign entries = site[include.collection]%} 
+{% comment %} {% assign entries = site[include.collection]%}  {% endcomment %}
+
+{% if page.lang == "en"%}
+  {% assign entries = site[include.collection] | where: "lang", "en"%} 
+{% elsif page.lang == "zh"%}
+  {% assign entries = site[include.collection] | where: "lang", "zh"%} 
+{% endif %}
+
 {% comment %} 
 把 where:"home", "show"拿掉就會顯示所有collection裡面的post 
 {% assign entries = site[include.collection] | where:"home", 'show' %} 
 {% endcomment %}
 
 {% if include.sort_by %}
-  {% assign entries = entries | sort: include.sort_by %}
+  {% assign entries = entries | sort: include.sort_by%}
 {% endif %}
 
 {% if include.sort_order == 'reverse' %}

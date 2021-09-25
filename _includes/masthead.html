@@ -21,11 +21,24 @@
 
                 <!-- 目錄 header有哪些頁面 -->
                 <ul class="visible-links">
-                    {%- for link in site.data.navigation.main -%}
-                    <li class="masthead__menu-item">
-                        <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif %}>{{ link.title }}</a>
-                    </li>
-                    {%- endfor -%} {% comment %} difference language {% endcomment %} {% comment %} {%if page.lang != null%} {%for collection in site.collections%} {%assign posts = collection.docs | where:"lang-ref", page.lang-ref | sort: 'lang'%} {%for post in posts%}
+                    {%if page.lang == "zh" %}
+                        {%- for link in site.data.zh.navigation.main -%}
+                        <li class="masthead__menu-item">
+                            <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif %}>{{ link.title }} </a>
+                        </li>
+                        {%- endfor -%} 
+                    {% elsif page.lang == "en"%}
+                        {%- for link in site.data.en.navigation.main -%}
+                        <li class="masthead__menu-item">
+                            <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif %}>{{ link.title }} </a>
+                        </li>
+                        {%- endfor -%} 
+                    {% endif %}
+
+
+                    
+                    
+                    {% comment %} difference language {% endcomment %} {% comment %} {%if page.lang != null%} {%for collection in site.collections%} {%assign posts = collection.docs | where:"lang-ref", page.lang-ref | sort: 'lang'%} {%for post in posts%}
                     <li><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}" title="View in {{post.lang}}">{{ post.lang }}</a></li>
                     {%endfor%} {%endfor%} {%endif%} {% endcomment %} {% comment %} end language {% endcomment %}
 

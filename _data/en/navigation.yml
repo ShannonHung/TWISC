@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: /
+    url: /en/
   - title: "About"
-    url: /about/
+    url: /en/about/
   - title: "Essay"
-    url: /essay/
+    url: /en/essay/
   - title: "BlockChain Security"
-    url: /Blockchain-Security/
+    url: /en/Blockchain-Security/
   # - title: "Topics"
   #   url: /collection-archive/
   # - title: "Sample Posts"

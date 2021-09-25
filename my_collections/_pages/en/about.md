@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /en/about/
 layout: single
 title:  "About Me"
 date: 2021-09-11 11:36 +0800 # update-time
