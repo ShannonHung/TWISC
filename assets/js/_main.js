@@ -3,6 +3,8 @@
    ========================================================================== */
 
 $(document).ready(function() {
+
+ 
   // FitVids init
   $("#main").fitVids();
 
@@ -45,6 +47,7 @@ $(document).ready(function() {
 
   // Search toggle
   $(".search__toggle").on("click", function() {
+    console.log("serch_toggle!!")
     $(".search-content").toggleClass("is--visible");
     $(".initial-content").toggleClass("is--hidden");
     // set focus on input
@@ -133,12 +136,11 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
-});
 
-
-$(document).ready(function () {
+  
   $(".lang-switcher-toggle").click(function () {
-      $(this).toggleClass("close");
+    console.log("toggle!!!")
+    $(this).toggleClass("close");
   });
 
   $("#site-nav > button").click(function () {
@@ -154,5 +156,6 @@ $(document).ready(function () {
           $(this).removeClass("close");
           $(this).next().addClass("hidden");
       }
-  });
+    });
 });
+
