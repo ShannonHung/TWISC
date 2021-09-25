@@ -267,7 +267,8 @@ exclude_from_localization:
   - "assets/images"
   - "assets/js"
   - "assets/files"
-parallel_localization: false # enables getting page lang from the first or second path segment. e.g. /en/post-name.md 
+parallel_localization: true # enables getting page lang from the first or second path segment. e.g. /en/post-name.md 
+lang_from_path: true
 sass:
     sourcemap: never
 

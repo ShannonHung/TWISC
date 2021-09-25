@@ -34,6 +34,47 @@
     }
 }
 
+.greedy-nav button {
+    svg.icon,
+    &:hover svg.icon {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover svg.icon {
+        color: $masthead-link-color-hover;
+    }
+}
+
+.greedy-nav {
+    a,
+    svg.icon {
+        color: $masthead-link-color;
+    }
+    button {
+        padding: 0;
+        margin-left: 1rem;
+    }
+    .hidden-links {
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+    .icon {
+        width: 1.5em;
+        height: 1.5em;
+        top: 0;
+    }
+    .search__toggle {
+        color: revert;
+        height: unset;
+        margin-right: unset;
+    }
+    .visible-links a:before {
+        background: $masthead-link-color-hover;
+    }
+}
+
 .greedy-nav .floating-menu {
     position: absolute;
     top: 100%;
