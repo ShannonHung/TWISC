@@ -1,15 +1,40 @@
+{% comment %} <ul class="floating-menu lang-switcher hidden">
+    {%- for lang in site.languages -%} 
+        {% if lang == "en"%}
+            {%assign lang_name = site.data.en.i10n.lang_name%}
+        {% else %}
+            {%assign lang_name = site.data.zh.i10n.lang_name%}
+        {% endif %}
+       
+        {% if lang == site.active_lang %}
+            <li class="lang-option-active masthead__menu-item">{{ lang_name }}</li>
+        {% else %}
+            <li> not same {{lang}} vs {{site.active_lang}}</li>
+            {% capture url %}
+                {% if lang != site.active_lang %} {{ lang+"/"+page.url }}{% endif %}         
+            {% endcapture %}
+            
+            <li class="lang-option-inactive masthead__menu-item">
+                <a href="/{{ url }}">
+                    {{lang_name}}
+                </a>
+            </li>
+        {% endif %} 
+    
+    {%- endfor -%}
+</ul> {% endcomment %}
 <ul class="floating-menu lang-switcher hidden">
     {%- for lang in site.languages -%}
         {%- assign lang_name = site.data[lang].l10n.lang_name -%}
         {% if lang == site.active_lang %}
-    <li class="lang-option-active masthead__menu-item">{{ lang_name }}</li>
+            <li class="lang-option-active masthead__menu-item">Win Win</li>
         {% else %}
             {% capture url %}{% if lang != site.default_lang %}{{ lang | prepend: "/" }}{% endif %}{{ page.url }}{%- endcapture -%}
-    <li class="lang-option-inactive masthead__menu-item">
-        <a {% static_href %}href="{{ url | relative_url }}"{% endstatic_href %}>
-            {{ lang_name }}
-        </a>
-    </li>
+            <li class="lang-option-inactive masthead__menu-item">
+                <a href="{{ url | relative_url }}">
+                    {{ lang_name }}
+                </a>
+            </li>
         {% endif %}
     {%- endfor -%}
 </ul>

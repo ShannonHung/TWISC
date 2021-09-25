@@ -469,3 +469,19 @@ If you want to use javascript, in your` _includes/footer.html` add :
 ```
 
 4. After that, simply wrap the math symbols with two double-dollar sign $$: ex. `$$E=mc^2$$`
+## Multilanguae
+src => https://github.com/untra/polyglot
+### How To Use It
+- When adding new posts and pages, add to the YAML front matter:
+```yml
+lang: zh_TW 
+```
+## JavaScript
+Please read [this artical](https://mmistakes.github.io/minimal-mistakes/docs/javascript/) first.
+
+> quick start
+```
+$ npm install 
+$ npm run build:js
+```
+

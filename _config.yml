@@ -142,7 +142,6 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
-
 # Reading Files
 include:
   - .htaccess
@@ -221,6 +220,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-polyglot
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -259,6 +259,17 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
+# jekyll-polyglot
+languages: ["en", "zh"] # what i18n you wish to support 
+default_lang: "en" # what is your default lang 
+exclude_from_localization: 
+  - "assets/css"
+  - "assets/images"
+  - "assets/js"
+  - "assets/files"
+parallel_localization: false # enables getting page lang from the first or second path segment. e.g. /en/post-name.md 
+sass:
+    sourcemap: never
 
 # HTML Compression
 # - https://jch.penibelst.de/
@@ -268,6 +279,7 @@ compress_html:
     envs: development
 
 # Collections用來歸類
+collections_dir: my_collections
 collections:
   Blockchain-Security:
     output: true
@@ -277,7 +289,6 @@ collections:
     output: true
     permalink: /:collection/:path/
     
-collections_dir: my_collections
 
 # Defaults
 defaults:

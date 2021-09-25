@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "Home"
+  - title: "首頁"
     url: /
-  - title: "About"
+  - title: "關於"
     url: /about/
-  - title: "Essay"
+  - title: "論文"
     url: /essay/
-  - title: "BlockChain Security"
+  - title: "區塊練安全"
     url: /Blockchain-Security/
   # - title: "Topics"
   #   url: /collection-archive/

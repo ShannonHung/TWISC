@@ -1,4 +1,8 @@
-{% assign entries = site[include.collection] | where:"home", 'show' %}
+{% assign entries = site[include.collection]%} 
+{% comment %} 
+把 where:"home", "show"拿掉就會顯示所有collection裡面的post 
+{% assign entries = site[include.collection] | where:"home", 'show' %} 
+{% endcomment %}
 
 {% if include.sort_by %}
   {% assign entries = entries | sort: include.sort_by %}
